@@ -349,6 +349,8 @@ Let’s Encrypt’s certificates are only valid for ninety days. To set a timer 
 ```
 systemctl status certbot.timer
 ```
+Cài đặt tự động gia hạn
+```
 0 0,12 * * * certbot renew --dry-run >/dev/null 2>&1
 ```
 
